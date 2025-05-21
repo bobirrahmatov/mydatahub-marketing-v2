@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MyDataHub</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover {
+      opacity: 1;
+    }
+    .header-buttons {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .header-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .header-btn.login {
+      color: #fff;
+      opacity: 0.7;
+    }
+    .header-btn.login:hover {
+      opacity: 1;
+    }
+    .header-btn.join {
+      background: #fff;
+      color: #000;
+    }
+    .header-btn.join:hover {
+      transform: translateY(-2px);
+    }
+    .main-content {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+          }
+        }
+      </script>   
+<header class="header">
+  <a href="/" class="logo">MyDataHub</a>
+  <nav class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-buttons">
+    <a href="#" class="header-btn join">Join Waitlist</a>
+  </div>
+</header>
+
+<div class="main-content" style=" 
+            display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+        ">
+        <span class="rainbow-label"><span>Streamline Your Data</span></span>
+        <h1>MyDataHub
+            <br>
+            Platform
+        </h1>
+        <p style="font-size: clamp(12px, 5vw, 18px);; opacity: 0.7;">
+            Your centralized hub for managing
+            <br>and analyzing data efficiently,
+            <br>powered by modern technology.
+        </p>
+        <div class="buttons">
+            <a href="#" class="section-btns" target="_blank">Join Waitlist <svg width="14px"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+            <a href="#" class="section-btns right" target="_blank">Contact   <svg
+                    width="14px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+    </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>
